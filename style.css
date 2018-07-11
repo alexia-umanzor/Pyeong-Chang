@@ -1,0 +1,143 @@
+function setup() {
+   createCanvas(400, 200);
+}
+
+function draw(){
+    drawRings();
+    pyeongChang();
+    drawBox();
+    drawStar();
+}
+
+function drawRings(){
+    drawBlueCircle();
+    drawYellowCircle();
+    drawBlackCircle();
+    drawGreenCircle();
+    drawRedCircle();
+}
+
+function drawBlueCircle(){
+    stroke("blue");
+    strokeWeight(3);
+    noFill();
+    ellipse(170,150,30,30);
+}
+
+function drawYellowCircle(){
+    stroke("gold");
+    strokeWeight(3);
+    noFill();
+    ellipse(190,163,30,30);
+}
+
+function drawBlackCircle(){
+    stroke("black");
+    strokeWeight(3);
+    noFill();
+    ellipse(210,150,30,30);
+}
+
+function drawGreenCircle(){
+    stroke("green");
+    strokeWeight(3);
+    noFill();
+    ellipse(230,163,30,30);
+}
+
+function drawRedCircle(){
+    stroke("red");
+    strokeWeight(3);
+    noFill();
+    ellipse(250,150,30,30);
+}
+
+function pyeongChang(){
+    textSize(21);
+    fill("black");
+    stroke("black");
+    strokeWeight(1);
+    text('PyeongChang 2018™', 100, 120);
+    
+}
+
+function drawRedRect(){
+    stroke("red");
+    strokeWeight(3);
+    fill("red");
+    rect(125,85,80,4);
+}
+
+function drawBlueRect(){
+    stroke("blue");
+    strokeWeight(3);
+    fill("blue");
+    rect(125,20,80,4);
+}
+
+function drawBlackRect(){
+    stroke("black");
+    strokeWeight(3);
+    fill("black");
+    rect(140,30,4,48);
+}
+
+function drawGreenRect(){
+    stroke("green");
+    strokeWeight(3);
+    fill("green");
+    rect(190,30,4,48);
+}
+
+function drawBox(){
+    drawRedRect();
+    drawBlueRect();
+    drawBlackRect();
+    drawGreenRect();
+}
+
+function drawRedLine(){
+    stroke("red");
+    strokeWeight(3);
+    fill("red");
+    line(240,30,220,40);
+}
+
+function drawBlackLine(){
+    stroke("black");
+    strokeWeight(4);
+    fill("black");
+    line(240,30,240,10);
+}
+
+function drawYellowLine(){
+    stroke("yellow");
+    strokeWeight(4);
+    fill("yellow");
+    line(240,30,220,20);
+}
+
+function drawBlueLine(){
+    stroke("blue");
+    strokeWeight(4);
+    fill("blue");
+    line(240,30,260,40);
+}
+
+function drawGreenLine(){
+    stroke("green");
+    strokeWeight(4);
+    fill("green");
+    line(240,30,260,20);
+}
+
+function drawStar(){
+     drawRedLine();
+     drawBlackLine();
+     drawYellowLine();
+     drawBlueLine();
+     drawGreenLine();    
+}
+
+
+
